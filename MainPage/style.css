@@ -71,10 +71,11 @@
   }
 
   nav ul li a:hover{
-        background-color: #d1a24c;
-        height: 20px;
+        background-color: #dbb46a;
+        height: 60px;
+        width: auto;
         color: #050404;
-       border-radius: 20px;
+       /* border-radius: 10px; */
 
   }
 
