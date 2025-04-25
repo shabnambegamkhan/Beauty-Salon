@@ -5,21 +5,14 @@
     box-sizing: border-box;
   }
   
-  
-  
-  
   header {
-    position: relative; /* Adjusted from 'top' to 'relative' */
-    background-color: #1b1c1b; /* Dark background color */
-    padding: 5px; /* Padding around the header */
-    text-align: center; /* Center the text */
+    position: relative; 
+    background-color: #1b1c1b; 
+    padding: 5px; 
+    text-align: center; 
    margin-top: 30px;
-    margin-bottom: 20px; /* Space between the header and the body */
+    margin-bottom: 20px; 
   }
-  
-  
-  
-  
   
   /* ===== BODY ===== */
   body {
@@ -130,7 +123,7 @@
   }
   
   .service-box img {
-    width: 180px; /* Image size reduced here */
+    width: 180px; 
     border-radius: 10px;
     /* box-shadow: 0 4px 12px rgba(67, 63, 63, 0.4); */
   }
@@ -161,25 +154,25 @@
   .footer-section {
     background-color: #090808;
     color: white;
-    padding: 8px 0; /* increased padding for more height */
+    padding: 8px 0; 
     text-align: center;
     margin-top: 80px;
-    font-size: 18px; /* slightly larger text */
+    font-size: 18px; 
   }
   
   .footer-container {
-    margin-bottom: 40px; /* more spacing below container */
+    margin-bottom: 40px; 
   }
   
   .footer-container .logo img {
-    width: 180px; /* larger logo image */
+    width: 180px; 
     height: auto;
     margin-bottom: 20px;
   }
   
   /* Social Media Icons */
   .social-icons a {
-    font-size: 26px; /* larger icons */
+    font-size: 26px; 
     margin: 0 15px;
   }
   
