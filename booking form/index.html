@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Book beauty services at our Dantewada parlour">
+    <title>Beauty Parlour Appointment Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
+</head>
+
+<body>
+    <nav>Contact Us</nav>
+    <div class="container">
+        <header>
+            <h1>Beauty Parlour Appointment Booking</h1>
+        </header>
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required
+                aria-required="true">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required
+                pattern="[0-9]{10,}" title="Enter valid phone number" aria-required="true">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required aria-required="true">
+                <option value="">--Choose a Service--</option>
+                <option value="makeup">Makeup</option>
+                <option value="haircut">Haircut</option>
+                <option value="facial">Facial</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required aria-required="true">
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required aria-required="true">
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Any special requests?"></textarea>
+
+            <button type="submit" aria-label="Submit booking form">Book Appointment</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+            <p>Email: <a href="mailto:info@beautyparlour.com">info@beautyparlour.com</a></p>
+            <p>Address: Main Road, Dantewada, Chhattisgarh, India</p>
+        </div>
+
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.338362561414!2d81.3933260751112!3d18.88043488226937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2a2e2d3b1c0e2f%3A0x2e6c0e1b8a5b9f4f!2sDantewada%2C%20Chhattisgarh%20494201!5e0!3m2!1sen!2sin!4v1713277010000!5m2!1sen!2sin"
+                loading="lazy" title="Beauty Parlour Location Map" aria-label="Google Maps location"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>
