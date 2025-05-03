@@ -8,10 +8,6 @@
     font-family: 'Segoe UI', sans-serif;
   }
   
-  /* body {
-    /* background: #7e1616; */
-    /* color: #333; */
-   /* }  */
   
   /*  Navbar */
 
@@ -80,7 +76,9 @@
   }
 
   .book-btn1 {
-    margin-left: 800px;
+    display: grid;
+    margin-left: 650px;
+    /* margin-top: 50%; */
      /* padding: 12px 30px; */
     font-size: 1rem;
     color: white;
@@ -92,6 +90,7 @@
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
+    width: 20%;
   }
   
   
@@ -102,16 +101,16 @@
   }
   
   
-  .book-btn {
+  /* .book-btn {
     padding: 8px 15px;
     background-color: #141112;
     color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    /* margin-left: 800px; */
+    margin-bottom: 300px;
     position: relative;
-  }
+  } */
   
   .book-btn:hover {
     background-color: #b91d6b;

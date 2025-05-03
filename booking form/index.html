@@ -20,7 +20,7 @@
         <header>
             <h1>Beauty Parlour Appointment Booking</h1>
         </header>
-        <form>
+        <form id="beautySalon-book">
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required
                 aria-required="true">
@@ -52,7 +52,7 @@
             <label for="notes">Additional Notes</label>
             <textarea id="notes" name="notes" rows="3" placeholder="Any special requests?"></textarea>
 
-            <button type="submit" aria-label="Submit booking form">Book Appointment</button>
+            <button type="submit"  id="submit-btn" aria-label="Submit booking form">Book Appointment</button>
         </form>
 
         <div class="contact-info">
@@ -71,6 +71,8 @@
             </iframe>
         </div>
     </div>
+
+    <p id="message"></p>
 </body>
 
 </html>

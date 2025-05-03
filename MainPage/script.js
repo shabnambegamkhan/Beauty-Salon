@@ -36,9 +36,9 @@ const textArray = [
   document.addEventListener("DOMContentLoaded", () => {
     const bookBtn = document.querySelector(".book-now-btn");
     bookBtn.addEventListener("click", () => {
-      alert("Thanks for choosing Blume! Booking coming soon 💖");
+      alert("Thanks for choosing Blume!💖");
       
-      window.location.href = "/booking.html";
+      window.location.href = "/booking form/index.html";
     });
   });
   
