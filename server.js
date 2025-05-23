@@ -3,7 +3,7 @@ const axios = require("axios");
 const cors = require("cors");
 require("dotenv").config();
 const connectDB = require('./db');
-const Booking = require("./models/bookingScema")
+const Booking = require("./models/bookingScema.js")
 
 const app = express();
 app.use(express.json());
@@ -14,6 +14,8 @@ app.use(cors());
 app.post('/api/bookingforms/booking', async (req, res) => {
     try {
         
+     console.log("Form data received", req.body)
+
         const {full_name, phone_number, email_address, select_service, preferred_date, preferred_time, additional_notes } = req.body;
 
         const newBooking = new Booking({ full_name, phone_number, email_address, select_service, preferred_date, preferred_time, additional_notes });
@@ -22,6 +24,8 @@ app.post('/api/bookingforms/booking', async (req, res) => {
         // res.status(201).json({ success: true, message: 'Booking saved successful', data: newBeautySalon });
         res.status(201).json({ success: true, message: 'Booking saved successful' });
     } catch (error) {
+console.log("save erroe", error)
+
         res.status(500).json({ success: false, message: "Server error while saving bookinge" });
     }
 });

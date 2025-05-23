@@ -76,28 +76,27 @@
   }
 
   .book-btn1 {
-    display: grid;
-    margin-left: 650px;
-    /* margin-top: 50%; */
-     /* padding: 12px 30px; */
+    position: fixed;
+    top: 70px;         /* Top se 20px space */
+    right: 20px;       /* Right se 20px space */
+    padding: 12px 25px;
     font-size: 1rem;
     color: white;
+    background-color: #c94f7c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #c94f7c;
-    padding: 12px 25px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s ease;
-    width: 20%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 999; /* Taaki hamesha sabke upar rahe */
   }
-  
   
   
   .book-btn1:hover{
     background-color: #a53e64;
-    transform: scale(1.2);   
+    transform: scale(1.2);  
+    color: black;
   }
   
   
@@ -114,6 +113,7 @@
   
   .book-btn:hover {
     background-color: #b91d6b;
+    color: black;
     transform: scale(1.2);
   }
   
@@ -304,49 +304,6 @@
     cursor: pointer;
   }
   
-  /*  Customer Reviews */
-  .reviews {
-    padding: 40px 20px;
-    background-color: #362d2d;
-    text-align: center;
-  }
-  
-  .reviews h2 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: white;
-    font-family: 'Playfair Display', serif;
-
-  }
-  
-  .review-container {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px;
-  }
-  
-  .review {
-    flex: 0 0 250px;
-    padding: 20px;
-    background: #f8e1f4;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  }
-
-  h4{
-    color: rgb(255, 251, 243);
-    font-size: 1.5rem;
-  }
-  p{
-    color: wheat;
-  }
-
-  .review-card{
-   display: flex;
-   flex-direction: column;
-
-  }
   
   /* 📱 Footer */
   footer {
@@ -410,7 +367,7 @@
 
 /*  Are you ready to Blume? */
 
-  .blume-about {
+   .blume-about {
     background-image: url('./images/blume4.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -454,7 +411,9 @@
     background-color: #c15466;
     color: #040504;
     font-weight: bold;
-  }
+  } 
+
+
   
   /*  time for a change */
 
@@ -499,7 +458,7 @@
   .text-side p {
     font-size: 1rem;
     line-height: 1.7;
-    color: #444;
+    color: #070707;
     margin-bottom: 20px;
   }
   

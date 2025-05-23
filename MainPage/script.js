@@ -24,6 +24,7 @@ const textArray = [
   
   function scrollToServices() {
     document.getElementById("services-section").scrollIntoView({ behavior: "smooth" });
+    window.location.href= "./booking-form/index.html"
   }
   
   function goToServices() {
@@ -31,14 +32,14 @@ const textArray = [
   }
   
 
-  ///////////////////////////////////
+  ////////// Are you ready to blume /////////////////////////
 
   document.addEventListener("DOMContentLoaded", () => {
     const bookBtn = document.querySelector(".book-now-btn");
     bookBtn.addEventListener("click", () => {
       alert("Thanks for choosing Blume!💖");
       
-      window.location.href = "/booking form/index.html";
+      window.location.href = "/booking-form/index.html";
     });
   });
   
